@@ -1,26 +1,32 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-// import {IoLocation} from "react-icons"
-// import { AiFillFacebook } from 'react-icons/fa';
-import { AiFillShopping,AiFillFacebook } from "react-icons/ai";
+import { NavLink } from 'react-router-dom'
+//  { AiFillShopping,AiFillFacebook } from "react-icons/ai";
 // import "../components/Pages/"
+import {AiFillShopping,AiFillEnvironment,AiOutlineUser } from "react-icons/ai";
 import "./Pages/Navbar.css"
+// import {IoLocation} from "react-icons"
 
+const activelink={textDecoration:"none", color:"brown"}
+const defelink={textDecoration:"none", color:"black"}
+// import { AiFillFacebook } from 'react-icons/fa';
+// impor
 
 const link=[
-    {path:"/",title:"Home"},
-    {path:"/ourfood",title:"OurFood"},
-    {path:"/",title:"Home"},
-    {path:"/",title:"Home"},
-    {path:"/",title:"Home"},
-    {path:"/",title:"Home"}
+    {path:"/",title:"HOME"},
+    {path:"/ourfood",title:"OUR FOOD"},
+    {path:"/about",title:"OUR STORY"},
+    {path:"/giftcards",title:"GIFT CARDS"},
+    {path:"/careers",title:"CAREERS"},
+    {path:"/franchi",title:"FRANCHISING"}
 ]
 const Navbar = () => {
   return (
 <>
 <nav className='main-nav'>
     <div className='logo'>
-        <h2><span>GK</span>'s <samp>T</samp>aste</h2>
+    
+        <NavLink style={{textDecoration:"none"}} to="/"><h2>GK's Taste</h2></NavLink>
+        {/* <img src={logo1} alt="" /> */}
         
     </div>
 
@@ -31,8 +37,8 @@ const Navbar = () => {
     {link.map((el)=>{
     return(
         // <li>
-            <Link to={el.path}>{el.title}</Link>
-            
+            <NavLink style={({isActive})=>{return isActive?activelink :defelink}} to={el.path}>{el.title}</NavLink>
+            // </li>
     )
 })}
     {/* </ul> */}
@@ -43,10 +49,13 @@ const Navbar = () => {
     {/* socialmedia */}
     {/* <ul> */}
         {/* <li> */}
-            <Link to="/"><AiFillShopping/></Link>
+            <NavLink to="/"><AiFillShopping/></NavLink>
         {/* </li> */}
         {/* <li> */}
-            <Link to="/"><AiFillFacebook/></Link>
+            <NavLink to="/"><AiFillEnvironment/></NavLink>
+            <NavLink to="/login"><AiOutlineUser/></NavLink>
+            
+            
             {/* </li> */}
     {/* </ul> */}
 </div>
@@ -55,13 +64,5 @@ const Navbar = () => {
   )
 }
 
-// <div>
-// {/* <Link to="/">Home</Link> */}
-// {link.map((el)=>{
-//     return(
-//         <Link to={el.path}>{el.title}</Link>
-//     )
-// })}
-//     </div>
 
 export default Navbar

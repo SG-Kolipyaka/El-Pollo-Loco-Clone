@@ -1,4 +1,265 @@
 .main-nav{
-    display: flex;
-    justify-content: space-evenly; 
+    display: grid;
+    grid-template-columns: 7rem 1fr 3fr 1fr 7rem;
+    width: 100%;
+    height: 80px;
+    background-color: antiquewhite;
 } 
+
+/* .menubar ul{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    height: 2rem;
+} */
+.menubar {
+    display:flex ;
+    justify-content:space-evenly;
+     /* background-color:Pink; */
+     padding:10px;
+     align-items: center;
+}
+.social-media{
+    display:flex;
+    justify-content: space-evenly;
+    padding: 5px;
+    align-items: center;
+    font-size: 200%;
+}
+.menubar>Link{
+    text-decoration: none;
+    color: aquamarine;
+}
+.logo{
+    display: grid;
+    background-color: lightsalmon;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: center;
+}
+.menubar{
+    grid-column: 3/4;
+}
+
+.logo h2{
+    font-weight: 200;
+    font-size: 2rem;
+    text-transform: uppercase;
+    background:wheat;
+    /* -webkit-text-fill-color: transparent; */
+    /* -webkit-background-clip:text; */
+    color: black;
+
+
+}
+/* ??????????????????????????????????????????? */
+
+/* .startimg{
+width:10%;
+} */
+#img1{
+    width:100%; 
+}
+#img4{
+    width:100%; 
+}
+#img3{
+    width:100%; 
+}
+#img5{
+    width:30%; 
+    
+}
+
+.slider1{
+    height:100%;
+    position: relative;
+}
+.slidermain{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+   
+}
+
+.ssld1{
+    width: 100%;
+    height: 600px;
+    margin: auto;
+}
+
+.leftslide{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    left: 32px;
+    font-size: 60px;
+    color: black;
+    z-index: 1;
+    cursor: pointer;
+}
+.rightslide{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    right: 32px;
+    font-size: 60px;
+    color: black;
+    z-index: 1;
+    cursor: pointer;
+}
+.hhh2{
+    position: absolute;
+    font-size: 120px;
+    font-weight: 200;
+    font-size: 2rem;
+    /* text-transform: uppercase; */
+ 
+    /* -webkit-text-fill-color: transparent; */
+    /* -webkit-background-clip:text; */
+    color: black;
+    /* left:-15%; */
+    right:63%;
+    bottom: 65%;
+}
+#p1{
+    position: absolute;
+    right:54%;
+    bottom: 45%;
+    
+}
+#but1{
+    background-color: goldenrod;
+    width: 8%;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    right:72%;
+    bottom: 36%;
+
+}
+#but1:hover{
+    background-color: brown;
+    
+}
+
+.hhh3{
+    position: absolute;
+    /* font-size: 90px;
+    font-weight: 200;
+    font-size: 2rem; */
+    /* text-transform: uppercase; */
+ 
+    /* -webkit-text-fill-color: transparent; */
+    /* -webkit-background-clip:text; */
+    color: black;
+    /* left:-15%; */
+    left:49%;
+    bottom: 65%;
+}
+#p2{
+    position: absolute;
+    left:44%;
+    bottom: 45%;
+}
+#but2{
+    background-color: blueviolet;
+    width: 12%;
+    height: 40px;
+    border-radius: 20%;
+    border: none;
+    position: absolute;
+    left:60%;
+    bottom: 36%;
+
+}
+#but2:hover{
+    background-color: brown;
+    
+}
+.div22{
+    position: relative;
+    height:100%;
+}
+
+/* ============================ */
+.div23{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height:100%;
+}
+.hhh4{
+    position: absolute;
+    /* font-size: 90px;
+    font-weight: 200;
+    font-size: 2rem; */
+    /* text-transform: uppercase; */
+ 
+    /* -webkit-text-fill-color: transparent; */
+    /* -webkit-background-clip:text; */
+    color: black;
+    /* left:-15%; */
+    left:29%;
+    bottom: 75%;
+}
+#p3{
+    position: absolute;
+    left:14%;
+    bottom: 45%;
+}
+#but3{
+    background-color: blueviolet;
+    width: 12%;
+    height: 40px;
+    border-radius: 20%;
+    border: none;
+    position: absolute;
+    left:30%;
+    bottom: 36%;
+
+}
+#but3:hover{
+    background-color: brown;
+    
+}
+
+/* ======================================= */
+.main-fot{
+    /* display: grid;
+    grid-template-columns: 7rem 1fr 3fr 1fr 7rem; 
+    grid-template-rows: 2; */
+    width: 100%;
+    height: 400px;
+    background-color: white;
+} 
+.main-fot>div>p{
+    color:brown;
+}
+
+.menubar2{
+    /* display:flex ; */
+    /* justify-content:space-evenly; */
+     background-color:whites;
+     padding:10px;
+     align-items: center;
+     font-size: 10px;
+}
+.social-media1{
+    display:flex;
+    justify-content: space-evenly;
+    /* padding: 5px; */
+    align-items: center;
+    font-size: 200%;
+    background-color: burlywood;
+}
+.logo1{
+    display: grid;
+    background-color: wheat;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: center;
+}
