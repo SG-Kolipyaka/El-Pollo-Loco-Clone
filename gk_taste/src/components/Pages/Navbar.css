@@ -263,3 +263,156 @@ width:10%;
     justify-content: center;
     align-items: center;
 }
+
+/* ========================================== */
+/* input[type="text"],
+select,
+textarea { */
+    .imp11{
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* input[type="submit"] { */
+    label {
+        font-size: 20px;  
+      }
+    .imp12{
+  background-color: #2b619e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 30%;
+  font-size: 20px;
+}
+
+input[type="submit"]:hover {
+  background-color: palevioletred;
+}
+/* ================================== */
+form {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 70%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 30px;
+  }
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  table td,
+  table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #8caacf;
+  }
+  
+  table tr:hover {
+    background-color: #ddd;
+  }
+  
+  table thead {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: brown;
+    color: white;
+    text-align: center;
+  }
+  
+  .delet{
+    background-color: brown;
+    color: #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  /* * {
+    box-sizing: border-box;
+  } */
+
+
+  .dd111{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 17px;
+    width: 90%;
+    margin: auto;
+  }
+  .img11{
+    width: 100%;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+  }
+  .dd222{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   /* width: 100%; */
+   background-color: lightgray;
+   border-radius: 20px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+  }
+  .but11{
+    background-color: brown;
+    color: aliceblue;
+    width: 30%;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  .but11:hover{
+    background-color: rosybrown;
+    color: black;
+   
+  }
+  #img66{
+    margin-top: -45px;
+    height: 600px;
+    width: 100%;
+  }
+  .hhh33{
+    position: absolute;
+    /* font-size: 90px;
+    font-weight: 200;
+    font-size: 2rem; */
+    /* text-transform: uppercase; */
+ 
+    /* -webkit-text-fill-color: transparent; */
+    /* -webkit-background-clip:text; */
+    color: black;
+    /* left:-15%; */
+    left:47%;
+    bottom: 70%;
+    
+  }
+  #but222{
+    background-color: blueviolet;
+    width: 12%;
+    height: 40px;
+    border-radius: 20%;
+    border: none;
+    position: absolute;
+    left:55%;
+    bottom: 36%;
+
+  }
