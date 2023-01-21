@@ -7,27 +7,41 @@ import { NavLink } from 'react-router-dom'
 const getData=(url)=>{
   return fetch(url).then((res)=>res.json());
 }
+let pages;
+const getData1=()=>{
+  return fetch(`https://636c99f691576e19e30fb69c.mockapi.io/items`).then((res)=>res.json()).then((data) => pages=data.length);
+}
+getData1()
+// console.log(getData1())
+// // const pages=getData1()
+// // console.log(pages.length)
 
 const OurFood = () => {
   const [loading,setloading]=useState(false)
   const [Error,setError]=useState(false)
   const [products,setProducts]=useState([])
+  const [page,setPage]=useState(1);
 
-  useEffect(()=>{
-    fetchdata()
-  },[])
+  // const pages=products.length
+  //     console.log(pages)
 
-  const fetchdata=async()=>{
+  const fetchdata=async(page)=>{
     setloading(true)
     try{
-      let data=await getData('https://636c99f691576e19e30fb69c.mockapi.io/items');
+      let data=await getData(`https://636c99f691576e19e30fb69c.mockapi.io/items?page=${page}&limit=6`);
       setProducts(data)
+      
       setloading(false)
     }catch(err){
 setError(true)
 setloading(false)
     }
   }
+
+  useEffect(()=>{
+    fetchdata(page)
+  },[page])
+
 
   return (
     loading?<h1>Loading...</h1>:Error?<h1>Something went wrong</h1>:
@@ -61,6 +75,11 @@ setloading(false)
         
         )
        })}
+    </div>
+    <div className='pagination1'>
+    <button  className={page!==1?'bbb0':"bbb3"}  disabled={page===1} onClick={()=>setPage(page-1)}>prev</button>
+    <button id='bbb1' >{page}</button>
+    <button className={page===Math.ceil(pages/6)?'bbb3':"bbb0"}  disabled={page===Math.ceil(pages/3)} onClick={()=>setPage(page+1)}>Next</button>
     </div>
 </div>
   )
